@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="register">
+    <file>按键2.jpg</file>
+    <file>背景4.jpg</file>
+    <file>背景2.jfif</file>
+    <file>背景3.jfif</file>
+    <file>背景5.jpg</file>
+    <file>按键1.jpg</file>
+    <file>背景1.jpg</file>
+  </qresource>
+</RCC>

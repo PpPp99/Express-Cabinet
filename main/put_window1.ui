@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>put_window_one</class>
+ <widget class="QMainWindow" name="put_window_one">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget {
+border-image: url(:/register/背景1.jpg)
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>531</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 40pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;Choose the box size：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>560</y>
+      <width>320</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 25px;
+   background-color:rgb(255, 196, 197);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string> cancel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>200</y>
+      <width>320</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 25px;
+   background-color:rgb(222, 254, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Use Large Box</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>440</y>
+      <width>320</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>The remaining：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>320</y>
+      <width>320</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>The remaining：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>440</y>
+      <width>320</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 25px;
+   background-color:rgb(222, 254, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Use Small Box</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>320</y>
+      <width>320</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 25px;
+   background-color:rgb(222, 254, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Use Medium Box</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>200</y>
+      <width>301</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>The remaining：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="big_rem_lab">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>200</y>
+      <width>50</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="med_rem_lab">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>320</y>
+      <width>70</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="small_rem_lab">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>440</y>
+      <width>70</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>put_window_one</receiver>
+   <slot>turn_put_win2big()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>put_window_one</receiver>
+   <slot>turn_put_win2med()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>put_window_one</receiver>
+   <slot>turn_put_win2small()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>put_window_one</receiver>
+   <slot>turn_courier_win2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>393</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>261</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>turn_put_win2big()</slot>
+  <slot>turn_put_win2med()</slot>
+  <slot>turn_put_win2small()</slot>
+  <slot>turn_courier_win2()</slot>
+ </slots>
+</ui>

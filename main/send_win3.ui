@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sendthreewin</class>
+ <widget class="QMainWindow" name="sendthreewin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget {
+border-image: url(:/register/背景1.jpg)
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>791</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 40pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Enter recipient information：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>600</y>
+      <width>320</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 25px;
+   background-color:rgb(222, 254, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Continue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>600</y>
+      <width>320</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 25px;
+   background-color:rgb(255, 196, 197);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>cancel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>210</y>
+      <width>351</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Receiver's Name:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Rec_name_le">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>210</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+   border-radius: 25px;
+   background-color:rgb(255, 255, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>320</y>
+      <width>431</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Receiver's Telephone:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Rec_tele_le">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>320</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+   border-radius: 25px;
+   background-color:rgb(255, 255, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>430</y>
+      <width>391</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Baskerville Old Face&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Receiver's Address:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Rec_address_le">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>430</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+   border-radius: 25px;
+   background-color:rgb(255, 255, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 20pt &quot;Showcard Gothic&quot;;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>sendthreewin</receiver>
+   <slot>turn_to_win2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>626</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sendthreewin</receiver>
+   <slot>turn_to_win4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>898</x>
+     <y>646</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>752</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>turn_to_win4()</slot>
+  <slot>turn_to_win2()</slot>
+ </slots>
+</ui>

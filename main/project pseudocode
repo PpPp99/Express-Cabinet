@@ -1,0 +1,77 @@
+User:
+Input: The user selects the interface or information to enter.
+Output: The interface you want to enter. Complete the various functions of courier and courier.
+   if user click the "fetch express delivery" button then:
+      open Enter the retrieval code window
+         if input correspondent code:
+            show the information of express in which box.
+            finish take express
+            close box
+            show success window
+               if click return then:
+                  return mainwindow
+               elif click  continue
+                  return input code window
+         else:
+            Prompt for input error
+   elseif click the "send delivery"
+      open User landing window
+      if input right telephone and passage
+         show choice box size window
+         if click big size
+            big size box open
+            big_box_number<- big_box_number-1
+            open recipient information window
+         elseif click medium size
+            medium size box open
+            medium_box_number<- big_box_number-1
+            open recipient information window
+         elseif click small size
+            small size box open
+            small_box_number<- big_box_number-1
+            open recipient information window
+         close box
+            show success window
+               if click return then:
+                  return mainwindow
+               elif click  continue
+                  return input code window
+      elseif:input errot telephone and passage
+         Prompt for input error
+      elseif:click registered button
+         open registered button
+         input name telephone passage address
+         click determine button
+         return landing window and database have the information of User
+   elseif: click "courier" button
+      open courier landing window
+      if input right telephone and passage
+         open courier window
+         if click "Put the customer express into the box" button then:
+            open the put window1
+            choose the box size
+            open the put window2
+            input the information of the receiver
+            click "continue"
+            open the put window3
+            output the id of box
+            click "close the box" button
+            show put window4
+            if click "continue to send"in 120 s then:
+               return put window1
+            elseif click "reopen the box"
+               return put window3
+            else click "return mainwindow" or 120s out
+               return mainwindow
+         elseif click "Collect customer to send express" button then:
+            open the collect window
+            choose the box size
+            open the collect window2
+            output the information of recipient and sender
+            click "close the box"
+            show success window
+               if click return then:
+                  return mainwindow
+               elif click  continue
+                  return input code window
+

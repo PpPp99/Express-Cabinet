@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget {
+border-image: url(:/register/背景1.jpg)
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_send">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>520</y>
+      <width>720</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 50px;
+   background-color:rgb(255, 255, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 30pt &quot;Algerian&quot;;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>client send express</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_receive">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>300</y>
+      <width>720</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 50px;
+   background-color:rgb(255, 255, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 30pt &quot;Algerian&quot;;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>client receive express</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_courier">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>90</y>
+      <width>720</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   border-radius: 50px;
+   background-color:rgb(255, 255, 255);
+   border:5px solid rgb(0, 0, 0);
+   font: 30pt &quot;Algerian&quot;;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>courier</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_receive</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>turn_win()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>379</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_send</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>turn_send_win()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>635</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_courier</sender>
+   <signal>clicked()</signal>
+   <receiver>Main</receiver>
+   <slot>turn_courier_win()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>turn_win()</slot>
+  <slot>turn_send_win()</slot>
+  <slot>turn_courier_win()</slot>
+ </slots>
+</ui>
